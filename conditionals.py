@@ -3,6 +3,10 @@
 # Day 2 Challenges
 # -------------------------------------------- 
 
+from random import random
+from urllib import response
+
+
 message = "Welcome to Day 2.\nToday we are learning about conditionals.\nLet's practice writing some conditionals of our own!"
 print(message)
 # -------------------------------------------- 
@@ -12,9 +16,13 @@ print("------------------- Challenge 1 -------------------")
    # Prompt the user to enter their age.
    # Write conditional statements that print out whether you can drive in your city. 
 
+city = input("enter your city: ")
+age = input ("enter your age: ")
+print (age)
+print(type(age))
 
-
-
+if int(age) >= 15.5:
+   print("you can drive")
 
 
 
@@ -34,10 +42,17 @@ print("------------------- Challenge 2 -------------------")
 
 
 
+score1 = 100
+score2 = 200
+score3 = 300
 
 
-
-
+if score1 > score2 and score1 > score3:
+   print("score1 is the highest in the room")
+elif score2 > score1 and score2 > score3:
+   print("score 2 is the highest in the city")
+else:
+   print("score3 is the highest")
 
 
 
@@ -59,8 +74,17 @@ print("------------------- Challenge 3 -------------------")
 # Snowing: Wear gloves and a scarf 
 
 # Here's a variable to get you started:
-weather = "rainy"
+temperarture = 60
+weather = "cold and windy"
+temp_2 = 0
+weather_2 = "sunny"
 
+if temperarture and weather >60:
+   print("its going to be hot wear cool clothing")
+elif temperarture and weather <60:
+   print ("wear some warm clothes because the waether is cold")
+elif temperarture and weather_2 <0:
+   print("we are going to freeze most likely")
 
 
 
@@ -133,7 +157,9 @@ print("------------------- Challenge 5 -------------------")
 # Your challenge is to translate the steps above into conditionals which will evaluate if the 
 # year stored in a variable is/was a leap year.
 
-
+print("hey, what year is it?")
+year = input()
+year = int(year)
 
 
 
