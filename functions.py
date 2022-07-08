@@ -15,33 +15,60 @@
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
 
+from sqlite3.dbapi2 import _Statement
+
+
 print("------------------- Challenge 1 -------------------")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
-
-
+def print_message():
+	print("hola como estas")
+print_message()
 # **** Challenge 1: Problem 2 ****
 # Write a function called print_five_messages() that calls print_message() five times.
-
-
+def print_5_messages():
+	print("WSP")
+print_5_messages()
+print_5_messages()
+print_5_messages()
+print_5_messages()
+print_5_messages()
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
+def ger_user_input(_Statement):
+	decision = input("how many prints? 1-5")
+	if decision == str(5):
+		print_5_messages(_Statement)
+	elif decision == str(1):
+		print_message()
+	else:
+		print("error")
 
+
+	
 
 # **** Challenge 1: Problem 4 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
-
+def print_greeting():
+	print("hello user")
+print_greeting()
 
 # **** Challenge 1: Problem 5 ****
 # Write a function called print_closing() that prints a goodbye message to the user.
+def print_closing():
+	print("goodbye user")
+print_closing
 
 
 # **** Challenge 1: Problem 6 ****
 # Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 # Remember! Use the functions that you've already made. Don't hardcode anything!
-
+def run():
+	print_greeting()
+	decision2 = input("enter anything")
+	print_closing()
 
 
 # -------------------------------------------- 
@@ -62,14 +89,25 @@ print("------------------- Challenge 2 -------------------")
 		# sum_double(1, 2) → 3
 		# sum_double(3, 2) → 5
 		# sum_double(2, 2) → 8
+	# sum_double(5, 5)
+	# return (num1 + num2) * 2
 
 # -------------------------------------------- 
 
+def sum_double(num1 , num2):
+	if num1 != num2:
+		return num1 + num2
+	else: return (num1 + num2) * 2
+	
 
+sum_double(5, 4)
+print(sum_double(5, 4))
 
+sum_double(11, 24)
+print(sum_double(11, 24))
 
-
-
+sum_double(12, 12)
+print(sum_double(12, 12))
 
 # Make sure to test your code! Write a few function calls to make sure your code works!
 
@@ -85,6 +123,13 @@ print("------------------- Challenge 2 -------------------")
 		# makes_10(1, 9) → True
 
 # -------------------------------------------- 
+def makes_10(num1, num2):
+	if num1 == 10:
+		return (True)
+	elif num2 == 10:
+		return (True)
+
+	elif
 
 
 

@@ -31,6 +31,57 @@ import random
 
   # --------------------------------------------
 
+#prompt_user = ("Pick a color please, any color ")
+#number = (0,9)
+#print (prompt_user)
+#print (" Here are the colors you can choose from ")
+#print ("green, red, blue, yellow")
+#color = input("choose color")
+#print (color)
+
+#if color == "red":
+	#number == input(" enter number 1 or 2")
+#elif color == "green":
+	#number == input(" enter number 3 or 4")
+#elif color == "blue":
+	#number == input(" enter number 5 or 6")
+#elif color == "yellow":
+	#number == input("enter number 7 or 8")
+
+
+color= ['red', 'green', 'blue', 'yellow']
+prompt_user = ("Pick a given color and a number from 1 to 8")
+number = (0, 9)
+print (prompt_user)
+choosen_color= input("Enter either red or green or blue or yellow: ")
+if choosen_color == "red": 
+    number = input("Enter a number from 1 or 2: ")
+    if int(number) == 1:
+        print ("You will be a writer!")
+    elif int(number) == 2:
+        print ("You will be a singer!")
+if choosen_color== "blue":
+    number= input("Enter a number from 3 or 4: ")
+    if int(number) == 3:
+        print ("You will be a doctor!")
+    if int(number) == 4:
+        print ("You will be a lawyer!")
+if choosen_color== "green":
+    number= input("Enter a number from 5 to 6: ")
+    if int(number) == 5:
+        print ("You will be a coder!") 
+    if int(number) == 6:
+        print ("You will be a constructor!")
+if choosen_color== "yellow":
+    number = input("Enter a number from 7 to 8: ")
+    if int(number) == 7:
+        print ("You will be an artist!")
+    if int(number) == 8:
+        print ("You will be a teacher!")
+else: 
+    print ("Read the direction!!!!!!")
+
+
 
 
 
