@@ -129,7 +129,8 @@ def makes_10(num1, num2):
 	elif num2 == 10:
 		return (True)
 
-	elif
+	else:
+		return (False)
 
 
 
