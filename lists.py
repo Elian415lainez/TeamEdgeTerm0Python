@@ -28,7 +28,10 @@ names = ["Julian", "Wolf", "Alex", "Steph", "Alessandro"]
 print("names: " + str(names))  
 
 #-->TODO: Declare another list called friends with at least 5 strings inside (if you don't have 5 friends make them up!)
-
+friends = ["edwin", "elian", "jimena", "donna", "pushinp"]
+print("**************************")
+print("friends: " + str(friends))
+print("**************************")
 
 #this list holds numbers
 numbers = [12.9, 23.4 , 100, 3.1415 , 500, 1.20]
@@ -36,7 +39,8 @@ print("numbers: " + str(numbers))
 
 #-->TODO: Declare another list and add in at least 5 numbers. Why five? I don't know. It just feels right.
 
-
+numbers = [1,7,9,0,3,5,8]
+print("numbers"+ str(numbers))
 
 #this list has mixed data types. It's allowed in Python!
 random_stuff = ["Aardvark", True, False, 1.23, "Grandpa"]
@@ -44,8 +48,11 @@ print("random: " + str(random_stuff))
 
 #-->TODO: Declare and log a list filled with the first 5 things that come into your head, booleans, Strings, numbers are all cool,
 
-
+random_strings = [2.1, "avatar", False, "goats", "guitars"] 
+print("random_strings: " + str (random_strings))
 #-->TODO: Declare and log two more lists with whatever you want. 
+computer_parts = ["GPU", "CPU", "Fans", "SSD", "Cooler"]
+utensils = ["Fork", "Spoon", "Knife"]
 
 
 print("------------------- CHALLENGE 2 -------------------")
@@ -54,6 +61,7 @@ print("------------------- CHALLENGE 2 -------------------")
 print("The first name is " + names[0])
 
 #-->TODO: Print the name of your best friend from your friends list
+print(friends[4])
 
 
 #-->TODO: Print the first AND last elements of any list you made, or make a brand new one.
@@ -65,7 +73,8 @@ names[1] = "Alyssa"
 print(names)
 
 #-->TODO: Replace your friends! Modify the list to replace any or all of your friends with new ones.
-
+friends [4] = "flash"
+print(friends)
 
 #The code below uses the times_ten() function to multiply the first element in our list by 10:
 def times_ten(number):
@@ -76,6 +85,12 @@ numbers[0] = times_ten(numbers[0])
 print(numbers)
 
 #-->TODO: Write another function that multiplies a number by 1000 and print the list, as above 
+def times_thousand(number):
+  number *= 1000
+  return number
+
+numbers[2] = times_thousand(numbers[2])
+print(numbers)
 
 
 
