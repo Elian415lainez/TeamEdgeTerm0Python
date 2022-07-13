@@ -41,7 +41,18 @@ def test_prime(n):
     return True
 
 #-->TODO: Declare a while loop that prints all the prime numbers between 0 and 100, use test_prime() helper function
-
+num = 1
+while(num <= 100):
+    count = 0
+    i = 2
+    while(i <= num//2):
+        if(num % i == 0):
+            count = count + 1
+            break
+        i = i + 1
+    if (count == 0 and num!= 1):
+        print(" %d" %num, end = '  ')
+    num = num + 1
 
 
 print("------------------- CHALLENGE 2 : FOUND   -------------------")
@@ -51,7 +62,11 @@ items = ["pencil" , "eraser" , "mirror" , "comb" , "spoon" , "key" , "earrings" 
 
 #-->TODO: Use a while loop to search the contents of a list for the key! If it exists, print "found the key!"
 
-
+index = 0
+while index < len(items):
+    element = items[index]
+    #statement(s)
+    index += 1
 
 print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 
@@ -61,10 +76,10 @@ print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 #-->TODO: Make me count  2, 4, 6,..., 50
 
 def even_numbers_to_fifty():
-    num = 50
+    num = 0
     while num < 50:
         print("number: " + str(num))
-
+        
 even_numbers_to_fifty()
 
 #-->TODO: Make this design  below
@@ -85,7 +100,7 @@ even_numbers_to_fifty()
 
 def pattern():
 
-    index = 0 
+    index = 0
     my_list =[]
     
     while index <= 5:
@@ -99,12 +114,24 @@ pattern()
 print("------------------- CHALLENGE 4 : MATH QUIZ   -------------------")
 
 
-
+import random
 #-->TODO: Make a Math Quiz that asks two random numbers (between 0 and 100 to make it easy).
 #         The user enters the answer. If wrong, keep prompting. If correct, say congrats!!
 #         Use this handy boolean to get you started! You will need input()!
 
 is_correct = False
+
+random_number1 = random.randint(0, 1)
+print(random_number1)
+random_number2 = random.randint(0, 100)
+print(random_number2)
+user_input1 = input("Guess the first number: ")
+user_input2 = input("Guess the second number")
+if random_number1 == user_input1 or random_number2 == user_input2:
+  print("you are correct")
+  is_correct = True
+else:
+  print("wrong numbers try again")
 
 
 print("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
@@ -116,14 +143,18 @@ print("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
 keep_asking = False
 
 def prompt_user():
-    pass
+  print("wsp what am i")
+  response = input()
+  return response
+  
 
 def response(response):
-    pass
+  print(f"i know your {response} but what am i")
+    
 
-while keep_asking:
-    #response(prompt_user())
-    pass
+while keep_asking == True:
+  response(prompt_user())
+    
 
 #-->TODO: Challenge! write a secret word to break out of the loop!
 

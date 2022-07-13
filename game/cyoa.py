@@ -17,7 +17,10 @@ print(welcome_prompt)
 username = input("Enter username:")
 print("Welcome " + username)
 
-print("there are 3 rooms you are able to navigate in, start in room 1")
+print("there are 4 rooms you are able to navigate in, start in room 1")
 
-room1 = input("welcome to the game, you are now in room 1")
-print(room1)
+list_of_rooms = ["Courtroom", "Library", "Kitchen", "Gym"]
+
+
+
+

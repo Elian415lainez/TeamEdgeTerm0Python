@@ -26,7 +26,8 @@ for x in range(11):
 
 #-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
 
-
+for birthday in range(17):
+    print("happy birthday " + str(birthday))
 
 print("------------------- CHALLENGE 2 : ITERATOR ----------------------")
 
@@ -38,11 +39,12 @@ for x in colors:
     print("The color is: " + x)
 
 #-->TODO: Declare a list with at least 5 animals. You provide the animals.
-animals = []
+animals = ["dog", "cat", "dinosaur", "falcon", "badger"]
 
 #-->TODO: Print all the animals in the array with a for loop. 
 
-
+for animal in animals:
+    print("the animal is a: " + animal)
 
 print("------------------- CHALLENGE 3 : EVEN COUNTDOWN ------------------")
 
@@ -57,10 +59,22 @@ else:
     print(str(random) + " is odd!")
 
 #-->TODO: Write a function that counts BACKWARDS from 100 and prints only even numbers
-
+#count = 100
+#while count > 0:
+  #print(count)
+  #count = count - 1
+def backward_count():
+    for x in range(100,0,-2):
+        print(x)
 
 #-->TODO: Write a function that counts BACKWARDS from the given random number and prints only odd numbers
+new_list = []
+def backward_count1():
+    for x in range(random,-1,-1):
+        if(x % 2 !=  0): new_list.append(x)
+    print(new_list)
 
+backward_count1()
 
 print("------------------- CHALLENGE 4 : Finder ------------------")
 
@@ -72,17 +86,19 @@ else:
     print("No, that color is not one of my favorites")
 
 #-->TODO Declare a list of any strings you  want: cities, friends, movies, etc.
-
+rand_strings = [1, 2, 3, 33, "The land" "michael", "jackson", "usher", "eminem", "yourself"]
 
 
 #-->TODO Write function to prompt the user to "Guess" if an element is present in your list. Store their response in a variable. 
 #   --> If their guess is in your list, print CONGRATULATIONS!
+rand_strings = input('Guess a word ansd see if your on my guest list for todays event: ')
+if x in rand_strings:
+    print("yes your on my list")
+else: 
+    print("no your not allowed")
 
-
-#-->TODO Call your function.
-
-
-
+#-->TODO Call your function
+backward_count()
 print("------------------- CHALLENGE 5 : Nested ------------------")
 
 #this is how you get the length of a word:
@@ -98,6 +114,18 @@ for color in colors:
 
 
 #-->TODO Write a function that prints every letter in a sentence that a user enters.
-
+def print_letters(sentence):
+    palabras = sentence.split(" ")
+    for palas in palabras :
+        for char in palas:
+            print(" " + char)
+sentence = input ("input a sentence and youll see every letter inside it")
 
 #-->CHALLENGE: Let the user know which word is the shortest one!
+def short_word(sentence):
+    palabras = sentence.split(" ")
+    return min(palabras, key=len)
+
+
+print(print_letters(sentence))
+print("La palabra mas corta en su parrafo es" + str(short_word(sentence)))
