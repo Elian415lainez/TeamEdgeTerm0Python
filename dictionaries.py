@@ -41,7 +41,14 @@ print(dictionary)
 ##################################  MY dictionary ########################### #/
 
 
+new_dictionary = {
+    "cows": 11,
+    "nothing_here": True,
+    "height" : 9,
+    "nombre" : "elian"
+                   
 
+}
 
 
 
@@ -52,11 +59,13 @@ print(dictionary)
 print("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 #-->TODO: Print your dictionary you created above
-
+print(new_dictionary)
 
 #-->TODO: Update the dictionary you just created  by adding new properties and values, including list elements, in this section.
 
-
+new_dictionary["height"] = 123
+new_dictionary["nothing_here"] = False
+new_dictionary["nombre"] = "Zandy"
 #-->TODO: Print your dictionary again and observe changes
 
 
@@ -64,11 +73,14 @@ print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 
 
 #-->TODO: Make a method that will update your dictionary value. It should take in a dictionary and return it modified.
-
-
+new_dictionary ={"cows": 11, "height": 5, "nombre": "sandra"}
+up_dict = {"cows": 111, "height": 6, "nombre": "ELI"}
+print("dictionary before updation:,new_dictionary")
+new_dictionary.update(new_dictionary)
+print("dictionary after updation:,new_dictionary")
 #-->TODO: Call the method.
 
-
+up_dict()
 
 print("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
